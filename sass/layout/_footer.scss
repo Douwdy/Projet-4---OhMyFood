@@ -1,0 +1,30 @@
+footer{
+    height: 186px;
+    width: 100%;
+    color: white;
+    background-color: #353535;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 13px;
+        width: 13px;
+        margin-right: 15px;
+    }
+    h1{
+        margin: 0;
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 15px 0px 15px 25px;
+    }
+    h2{
+        font-size: 16px;
+        margin: 5px 0px 5px 25px;
+        font-weight: 400;
+    }
+}

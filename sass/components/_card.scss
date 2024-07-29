@@ -27,3 +27,81 @@
         margin-left: -250px;
     }
 }
+
+.restaurant-card{
+    overflow: hidden;
+    border-radius: 15px;
+    height: 250px;
+    width: 340px;
+    &_new{
+        @include flex-center;
+        position: absolute;
+        margin-top: 8px;
+        margin-left: 250px;
+        height: 29px;
+        width: 80px;
+        background-color: $color-tertiary-bg;
+        color: $color-tertiary;
+        border-radius: 2px;
+    }
+    &_img{
+        width: 340px;
+        height: 174px;
+        object-fit: cover;
+    }
+    &_desc{
+        margin-top: -5px;
+        height: 76px;
+        background-color: white;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            margin: 0;
+            margin-left: 15px;
+            font-size: 18px;
+            font-weight: 700;          
+        }
+        p{
+            margin: 0;
+            margin-left: 15px;
+            font-size: 17px;
+            font-weight: 300;  
+        }
+        &_heart{
+            position: absolute;
+            margin-left: 290px;
+            display: inline-block;
+            user-select: none;
+            input[type="checkbox"]{
+                display: none;
+            }
+
+            label {
+                cursor: pointer;
+                font-size: 22px;
+                .fa-solid{
+                    display: none;
+                }
+                .fa-regular{
+                    display: unset;
+                }
+            }
+            
+            input[type="checkbox"]:checked + label {
+                background: $color-heart;
+                background-clip: text;
+                color: transparent;
+                animation: bump 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                cursor: pointer;
+                .fa-regular{
+                    display: none;
+                }
+                .fa-solid{
+                    display: unset;
+                }
+            }
+        }
+    }
+}
