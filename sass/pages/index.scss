@@ -1,0 +1,63 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 335px;
+    &-loc{
+        @include flex-center;
+        height: 50px;
+        width: 100%;
+        background-color: #EAEAEA;
+        i{
+            height: 16px;
+        }
+        input{
+            width: 120px;
+            text-align: center;
+            border: none;
+            background: none;
+            font-size: 16px;
+            font-weight: 500;
+            &:focus{
+                border: none;
+            }
+        }
+    }
+    &-align{
+        height: 285px;
+        width: 100%;
+        background-color: #F6F6F6;
+        @include flex-center;
+        flex-direction: column;
+    }
+    &-title{
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        width: 275px;
+    }
+    &-subtitle{
+        margin-top: 0px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 300; 
+        width: 315px;
+    }
+}
+
+.tutorial{
+    height: 440px;
+    width: 100%;
+    &-title{
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+    }
+    &-align{
+        @include flex-between;
+        flex-direction: column;
+        height: 260px;
+    }
+}

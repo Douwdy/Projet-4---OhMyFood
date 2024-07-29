@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/public/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-bold;
+    src: url(/public/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Shrikhand;
+    src: url(/public/fonts/Shrikhand-Regular.ttf);
+}
+
+a{
+    text-decoration: none;
+}
+
+.fa-store{
+    color: $color-highlight;
+}
+
+.fa-list-ul, .fa-mobile-screen-button{
+    color: #7E7E7E;
+}

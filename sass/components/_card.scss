@@ -1,0 +1,29 @@
+.tutorial-card{
+    background: #F6F6F6;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    border-radius: 20px;
+    width: 322px;
+    height: 72px;
+    @include flex-center;
+    flex-direction: row;
+    &_num{
+        position: absolute;
+        margin-left: -324px;
+        @include flex-center;
+        background: $color-highlight;
+        color: white;
+        height: 24px;
+        width: 24px;
+        border-radius: 24px;
+    }
+    &_title{
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;        
+    }
+    i{
+        position: absolute;
+        font-size: 18px;
+        margin-left: -250px;
+    }
+}

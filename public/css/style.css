@@ -1,0 +1,175 @@
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(/public/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-bold;
+  src: url(/public/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Shrikhand;
+  src: url(/public/fonts/Shrikhand-Regular.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+.fa-list-ul, .fa-mobile-screen-button {
+  color: #7E7E7E;
+}
+
+/* Components */
+.tutorial-card {
+  background: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 20px;
+  width: 322px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.tutorial-card_num {
+  position: absolute;
+  margin-left: -324px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #9356DC;
+  color: white;
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+}
+.tutorial-card_title {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+.tutorial-card i {
+  position: absolute;
+  font-size: 18px;
+  margin-left: -250px;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 218px;
+  height: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: all 0.5s ease;
+}
+.hero-btn:hover {
+  filter: opacity(0.8);
+}
+
+/* Layout */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  width: 100vw;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+}
+header h1 {
+  font-family: Shrikhand;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+/* Pages */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 335px;
+}
+.hero-loc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: #EAEAEA;
+}
+.hero-loc i {
+  height: 16px;
+}
+.hero-loc input {
+  width: 120px;
+  text-align: center;
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.hero-loc input:focus {
+  border: none;
+}
+.hero-align {
+  height: 285px;
+  width: 100%;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  width: 275px;
+}
+.hero-subtitle {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  width: 315px;
+}
+
+.tutorial {
+  height: 440px;
+  width: 100%;
+}
+.tutorial-title {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+.tutorial-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 260px;
+}
+
+/*# sourceMappingURL=style.css.map */
