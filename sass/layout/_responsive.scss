@@ -1,0 +1,65 @@
+@media (min-width: 1024px) {
+    header{
+        height: 96px;
+        h1{
+            font-size: 34px;
+        }
+    }
+
+    .hero{
+        height: 335px;
+        &-align{
+            height: 285px;
+            width: 100%;
+            background-color: #F6F6F6;
+            @include flex-center;
+            flex-direction: column;
+        }
+        &-title{
+            font-size: 40px;
+            width: auto;
+        }
+        &-subtitle{
+            width: auto;
+        }
+    }
+    
+    .tutorial{
+        flex-direction: column;
+        &-align{
+            @include flex-between;
+            flex-direction: row;
+            height: auto;
+            width: 80%;
+            flex-wrap: wrap;
+        }
+    }
+    
+    .restaurant{
+        @include flex-center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &-align{
+            @include flex-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 1400px;
+        }
+        &-card{
+            width: 490px;
+            margin-bottom: 30px;
+            &_new{
+                margin-top: 16px;
+                margin-left: 394px;
+            }
+            &_img{
+                width: 490px;
+            }
+            &_desc{
+                &_heart{
+                    margin-left: 440px;
+                }
+            }
+        }
+    }
+}

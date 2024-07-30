@@ -316,4 +316,74 @@ header h1 {
   padding-bottom: 50px;
 }
 
+/* Responsive */
+@media (min-width: 1024px) {
+  header {
+    height: 96px;
+  }
+  header h1 {
+    font-size: 34px;
+  }
+  .hero {
+    height: 335px;
+  }
+  .hero-align {
+    height: 285px;
+    width: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero-title {
+    font-size: 40px;
+    width: auto;
+  }
+  .hero-subtitle {
+    width: auto;
+  }
+  .tutorial {
+    flex-direction: column;
+  }
+  .tutorial-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  .restaurant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant-align {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1400px;
+  }
+  .restaurant-card {
+    width: 490px;
+    margin-bottom: 30px;
+  }
+  .restaurant-card_new {
+    margin-top: 16px;
+    margin-left: 394px;
+  }
+  .restaurant-card_img {
+    width: 490px;
+  }
+  .restaurant-card_desc_heart {
+    margin-left: 440px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
