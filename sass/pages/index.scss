@@ -49,12 +49,10 @@
 .tutorial{
     padding-top: 50px;
     width: 100%;
-    @include flex-center;
     flex-direction: column;
     &-title{
         font-size: 24px;
         margin: 0px 0px 35px 24px;
-        width: 100%;
         font-weight: 700;
         text-align: left;
     }
@@ -72,7 +70,6 @@
     &_title{
         font-size: 24px;
         margin: 0px 0px 35px 24px;
-        width: 100%;
         font-weight: 700;
         text-align: left;
     }
