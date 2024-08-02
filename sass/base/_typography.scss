@@ -1,27 +1,21 @@
+// Police Roboto
 @font-face {
     font-family: Roboto;
     src: url(/public/fonts/Roboto-Regular.ttf);
 }
-
+// Police Roboto Bold
 @font-face {
-    font-family: Roboto-bold;
+    font-family: Roboto;
     src: url(/public/fonts/Roboto-Bold.ttf);
+    font-weight: bold;
 }
-
+// Police Shrikhand
 @font-face {
     font-family: Shrikhand;
     src: url(/public/fonts/Shrikhand-Regular.ttf);
 }
-
+// Mise en forme de base des liens hypertexte
 a{
     text-decoration: none;
     color: unset;
-}
-
-.fa-store{
-    color: $color-highlight;
-}
-
-.fa-list-ul, .fa-mobile-screen-button{
-    color: #7E7E7E;
 }

@@ -1,11 +1,20 @@
+// Header
 header{
     @include flex-center;
     height: 63px;
     width: 100vw;
     box-shadow: 0px 2px 4px 0px #00000026;
+    // Titre / Logo OhMyFood
     h1{
         font-family: Shrikhand;
         font-weight: 400;
         font-size: 30px;
     }
+}
+
+// Flèche retour à la page d'accueil
+.back-arrow{
+    position: absolute;
+    font-size: 1.5em;
+    left: 25px;
 }

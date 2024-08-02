@@ -1,4 +1,6 @@
+// Footer 
 footer{
+    bottom: 0;
     height: 186px;
     width: 100%;
     color: white;
@@ -7,14 +9,14 @@ footer{
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    // Footer Icones
     i{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         height: 13px;
         width: 13px;
         margin-right: 15px;
     }
+    // Footer Titre / Logo OhMyFood
     h1{
         margin: 0;
         font-family: Shrikhand;
@@ -22,6 +24,7 @@ footer{
         font-weight: 400;
         margin: 15px 0px 15px 25px;
     }
+    // Footer mise en forme des liens cliquables
     h2{
         font-size: 16px;
         margin: 5px 0px 5px 25px;

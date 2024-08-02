@@ -1,11 +1,12 @@
 @media (min-width: 1024px) {
+    // Header Responsive
     header{
         height: 96px;
         h1{
             font-size: 34px;
         }
     }
-
+    // Hero Title Responsive
     .hero{
         height: 239px;
         &-align{
@@ -26,15 +27,15 @@
             width: auto;
         }
     }
-    
+    // Fonctionnement Responsive
     .tutorial{
         flex-direction: column;
         padding: 50px 180px 50px 180px;
-        width: auto;
+        width: 55%;
         &-title{
             margin: 0px 0px 25px 0px;
             width: 100%;
-            font-weight: 700;
+            font-weight: bold;
             text-align: left;
         }
         &-align{
@@ -46,7 +47,7 @@
             padding-bottom: 0px;
         }
     }
-    
+    // Restaurants Responsive
     .restaurant{
         @include flex-center;
         flex-direction: row;
@@ -79,7 +80,26 @@
             }
         }
     }
-    
+    // Menu Responsive
+    .menu{
+        width: 100vw;
+        max-width: 1055px;
+        &-title{
+            width: 350px;
+        }
+        &_img{
+            height: 383px;
+        }
+        &-container_card{
+            width: 634px;
+            &_price{
+                transition: transform 0.5s linear;
+                transform: translateX(59px);
+            }
+        }
+        
+    }
+    // Footer Responsive
     footer{
         height: 114px;
         align-items: flex-end;
