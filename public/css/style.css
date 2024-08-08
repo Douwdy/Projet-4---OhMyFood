@@ -1,4 +1,5 @@
 /* Base */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -13,19 +14,6 @@ body {
   flex-direction: column;
 }
 
-@font-face {
-  font-family: Roboto;
-  src: url(/public/fonts/Roboto-Regular.ttf);
-}
-@font-face {
-  font-family: Roboto;
-  src: url(/public/fonts/Roboto-Bold.ttf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: Shrikhand;
-  src: url(/public/fonts/Shrikhand-Regular.ttf);
-}
 a {
   text-decoration: none;
   color: unset;
@@ -133,7 +121,7 @@ a {
   background-color: white;
 }
 .menu-container_card_desc {
-  transition: min-width 0.5s ease-out;
+  transition: min-width 0.2s linear;
   min-width: 290px;
   margin-left: 10px;
   height: 100%;
@@ -162,6 +150,7 @@ a {
 }
 .menu-container_card_price {
   transform: translateX(8px);
+  transition: transform 0.2s linear;
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -171,7 +160,8 @@ a {
 .menu-container_card_price h5 {
   font-size: 15px;
   margin: 0px;
-  margin-right: 15px;
+  margin-right: 20px;
+  margin-bottom: 15px;
 }
 .menu-container_card_price_check {
   display: flex;
@@ -187,9 +177,10 @@ a {
 }
 .menu-container_card:hover .menu-container_card_price {
   transform: translateX(0px);
+  transition: transform 0.2s linear;
 }
 .menu-container_card:hover .menu-container_card_desc {
-  transition: min-width 0.5s ease-out;
+  transition: min-width 0.2s linear;
   min-width: 238px;
 }
 
@@ -205,10 +196,11 @@ a {
   font-weight: 500;
   background: linear-gradient(0deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  transition: filter 0.5s ease;
+  transition: all 0.5s ease;
 }
 .hero-btn:hover {
   filter: opacity(0.85);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3764705882);
 }
 
 .heart {
@@ -335,6 +327,7 @@ header h1 {
   font-size: 24px;
   font-weight: bold;
   width: 275px;
+  margin-top: -20px;
 }
 .hero-subtitle {
   margin-top: 0px;
@@ -427,6 +420,7 @@ header h1 {
 .menu-container_title {
   font-size: 16px;
   font-weight: 300;
+  margin-left: 10px;
   width: 40px;
   border-bottom: #99E2D0 solid 3px;
 }
@@ -443,7 +437,7 @@ header h1 {
     font-size: 34px;
   }
   .hero {
-    height: 239px;
+    height: 280px;
   }
   .hero-align {
     gap: 18px;
@@ -457,17 +451,22 @@ header h1 {
   .hero-title {
     font-size: 40px;
     margin: 0;
+    margin-bottom: 15px;
     width: auto;
     font-weight: bold;
   }
   .hero-subtitle {
     margin: 0;
     width: auto;
+    margin-bottom: 15px;
+  }
+  .hero-btn {
+    margin-bottom: 15px;
   }
   .tutorial {
     flex-direction: column;
     padding: 50px 180px 50px 180px;
-    width: 55%;
+    width: 75%;
   }
   .tutorial-title {
     margin: 0px 0px 25px 0px;
@@ -491,10 +490,12 @@ header h1 {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 80%;
     padding: 50px 180px 50px 180px;
   }
   .restaurant_title {
     width: 100%;
+    margin-left: 35px;
   }
   .restaurant-align {
     display: flex;
@@ -533,7 +534,6 @@ header h1 {
     width: 634px;
   }
   .menu-container_card_price {
-    transition: transform 0.5s linear;
     transform: translateX(59px);
   }
   footer {
@@ -551,7 +551,7 @@ header h1 {
   }
   footer h1 {
     margin: 0;
-    margin: 15px 25px 15px 25px;
+    margin: 15px 25px 15px 100px;
   }
   footer h2 {
     margin-bottom: 20px;
