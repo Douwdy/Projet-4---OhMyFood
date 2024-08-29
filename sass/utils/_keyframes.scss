@@ -1,9 +1,32 @@
-// Animation du coeur
-@keyframes bump {
+// Animation du loader
+@keyframes spin {
     0%{
-        filter: opacity(0);
+        transform: rotate(0deg);
     }
     100%{
-        filter: opacity(1);
+        transform: rotate(360deg);
+    }
+}
+
+// Animation de la disparition progressive du loader
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+// Animation de l'apparition progressive des éléments du menu
+@keyframes box-flowdown{
+    0%{
+        transform: translateY(25%);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
     }
 }

@@ -1,0 +1,18 @@
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    &_icon{
+        font-size: 5rem;
+        color: $color-highlight;
+        animation: spin 1s infinite;
+    }
+    animation: fadeOut 1.5s linear forwards;
+}

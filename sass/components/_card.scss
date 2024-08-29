@@ -88,6 +88,7 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: white;
+    animation: box-flowdown 0.5s linear;
     // Carte description du plat
     &_desc{
         transition: min-width 0.2s linear;
