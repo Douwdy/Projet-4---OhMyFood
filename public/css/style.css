@@ -14,11 +14,41 @@ body {
   flex-direction: column;
 }
 
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 a {
   text-decoration: none;
   color: unset;
 }
 
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bump-reverse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -53,6 +83,7 @@ a {
   border-radius: 20px;
   width: 322px;
   height: 72px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,9 +259,12 @@ a {
   user-select: none;
   cursor: pointer;
   font-size: 22px;
+  animation: bump-reverse 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .heart .fa-solid {
   display: none;
+  position: inherit;
+  z-index: 1;
 }
 .heart .fa-regular {
   display: unset;
@@ -239,14 +273,14 @@ a {
   background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   background-clip: text;
   color: transparent;
-  animation: bump 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: bump 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
-}
-.heart:hover .fa-regular {
-  display: none;
 }
 .heart:hover .fa-solid {
   display: unset;
+}
+.heart:hover .fa-regular {
+  display: none;
 }
 
 .loader {
@@ -272,7 +306,7 @@ a {
 footer {
   bottom: 0;
   height: 186px;
-  width: 100%;
+  width: 100vw;
   color: white;
   background-color: #353535;
   display: flex;
@@ -308,8 +342,10 @@ header {
   height: 63px;
   width: 100vw;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  position: inherit;
+  z-index: 2;
 }
-header h1 {
+header h2 {
   font-family: Shrikhand;
   font-weight: 400;
   font-size: 30px;
@@ -337,6 +373,9 @@ header h1 {
   height: 50px;
   width: 100%;
   background-color: #EAEAEA;
+  position: inherit;
+  z-index: 1;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .hero-loc i {
   height: 16px;
@@ -413,7 +452,7 @@ header h1 {
   font-weight: bold;
   text-align: left;
 }
-.restaurant-align {
+.restaurant-align_2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -477,6 +516,7 @@ header h1 {
   }
   .hero {
     height: 280px;
+    width: inherit;
   }
   .hero-align {
     gap: 18px;
@@ -504,11 +544,14 @@ header h1 {
   }
   .tutorial {
     flex-direction: column;
-    padding: 50px 180px 50px 180px;
-    width: 75%;
+    padding: 50px 0px 50px 0px;
+    max-width: 1155px;
+  }
+  .tutorial-card {
+    width: 322px;
   }
   .tutorial-title {
-    margin: 0px 0px 25px 0px;
+    margin-left: 0;
     width: 100%;
     font-weight: bold;
     text-align: left;
@@ -529,20 +572,31 @@ header h1 {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
-    padding: 50px 180px 50px 180px;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
   }
   .restaurant_title {
     width: 100%;
-    margin-left: 35px;
+    text-align: left;
+    margin-left: 0;
   }
-  .restaurant-align {
+  .restaurant_align {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1400px;
+    margin-left: 50px;
+    max-width: 1155px;
+    padding-bottom: 0px;
+  }
+  .restaurant-align_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1155px;
     padding-bottom: 0px;
   }
   .restaurant-card {

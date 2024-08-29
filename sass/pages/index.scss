@@ -10,6 +10,9 @@
         height: 50px;
         width: 100%;
         background-color: #EAEAEA;
+        position: inherit;
+        z-index: 1;
+        box-shadow: 0px 2px 4px 0px #00000026;
         i{
             height: 16px;
         }
@@ -89,7 +92,7 @@
         font-weight: bold;
         text-align: left;
     }
-    &-align{
+    &-align_2{
         @include flex-between;
         gap: 18px;
         flex-direction: column; 

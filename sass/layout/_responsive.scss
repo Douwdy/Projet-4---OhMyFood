@@ -9,6 +9,7 @@
     // Hero Title Responsive
     .hero{
         height: 280px;
+        width: inherit;
         &-align{
             gap: 18px;
             width: 100%;
@@ -35,10 +36,13 @@
     // Fonctionnement Responsive
     .tutorial{
         flex-direction: column;
-        padding: 50px 180px 50px 180px;
-        width: 75%;
+        padding: 50px 0px 50px 0px;
+        max-width: 1155px;
+        &-card{
+            width: 322px;
+        }
         &-title{
-            margin: 0px 0px 25px 0px;
+            margin-left: 0;
             width: 100%;
             font-weight: bold;
             text-align: left;
@@ -57,17 +61,26 @@
         @include flex-center;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 80%;
-        padding: 50px 180px 50px 180px;
+        width: 100%;
+        padding: 50px 0px 50px 0px;
         &_title{
             width: 100%;
-            margin-left: 35px
+            text-align: left;
+            margin-left: 0;
         }
-        &-align{
-            @include flex-around;
+        &_align{
+            @include flex-between;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 1400px;
+            margin-left: 50px;
+            max-width: 1155px;
+            padding-bottom: 0px;
+        }
+        &-align_2{
+            @include flex-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 1155px;
             padding-bottom: 0px;
         }
         &-card{

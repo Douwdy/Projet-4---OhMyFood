@@ -10,3 +10,9 @@ body{
     @include flex-center;
     flex-direction: column;
 }
+
+main{
+    width: 100vw;
+    @include flex-center;
+    flex-direction: column;
+}
