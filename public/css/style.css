@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  width: 100vw;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,7 +516,7 @@ header h2 {
   }
   .hero {
     height: 280px;
-    width: inherit;
+    width: 100vw !important;
   }
   .hero-align {
     gap: 18px;
@@ -572,7 +572,7 @@ header h2 {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw !important;
     padding: 50px 0px 50px 0px;
   }
   .restaurant_title {
