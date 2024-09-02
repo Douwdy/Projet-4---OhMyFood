@@ -26,7 +26,7 @@
     }
     // Menu image d'illustration
     &_img{
-        width: 100%;
+        width: 100vw !important;
         height: 275px;
         object-fit: cover;
         position: relative;

@@ -489,7 +489,7 @@ header h2 {
   margin: 0px;
 }
 .menu_img {
-  width: 100%;
+  width: 100vw !important;
   height: 275px;
   object-fit: cover;
   position: relative;
