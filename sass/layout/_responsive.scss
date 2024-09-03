@@ -9,7 +9,7 @@
     // Hero Title Responsive
     .hero{
         height: 280px;
-        width: 100vw !important;
+        width: 100% ;
         &-align{
             gap: 18px;
             width: 100%;
@@ -37,9 +37,10 @@
     .tutorial{
         flex-direction: column;
         padding: 50px 0px 50px 0px;
-        max-width: 1155px;
+        max-width: 1440px;
         &-card{
-            width: 322px;
+            width: 30%;
+            max-width: 322px;
         }
         &-title{
             margin-left: 0;
@@ -52,7 +53,6 @@
             flex-direction: row;
             width: 100%;
             height: auto;
-            flex-wrap: wrap;
             padding-bottom: 0px;
         }
     }
@@ -61,37 +61,40 @@
         @include flex-center;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100vw !important;
-        padding: 50px 0px 50px 0px;
+        box-sizing: border-box;
         &_title{
             width: 100%;
             text-align: left;
             margin-left: 0;
         }
-        &_align{
+        &-align{
             @include flex-between;
             flex-direction: row;
             flex-wrap: wrap;
-            margin-left: 50px;
-            max-width: 1155px;
             padding-bottom: 0px;
+            width: 80%;
+            max-width: 1440px;
         }
         &-align_2{
             @include flex-between;
             flex-direction: row;
             flex-wrap: wrap;
-            max-width: 1155px;
             padding-bottom: 0px;
+            width: 100%;
+            a{
+                width: 50%;
+                max-width: 490px;
+                position: relative;
+            }
         }
         &-card{
-            width: 490px;
-            margin-bottom: 0px;
+            width: 100%;
             &_new{
-                margin-top: 16px;
-                margin-left: 394px;
+                right: 10px;
+                top: 10px;
             }
             &_img{
-                width: 490px;
+                width: 100%;
             }
             &_desc{
                 &_heart{
@@ -102,7 +105,7 @@
     }
     // Menu Responsive
     .menu{
-        width: 100vw;
+        width: 100%;
         max-width: 1055px;
         &-title{
             width: 350px;

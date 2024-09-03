@@ -14,8 +14,12 @@ body {
   flex-direction: column;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 main {
-  max-width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,17 +85,18 @@ a {
   background: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
-  width: 322px;
+  width: 100%;
   height: 72px;
   margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  position: relative;
 }
 .tutorial-card_num {
   position: absolute;
-  margin-left: -324px;
+  left: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,22 +114,23 @@ a {
 .tutorial-card i {
   position: absolute;
   font-size: 18px;
-  margin-left: -250px;
+  margin-left: -200px;
 }
 
 .restaurant-card {
   overflow: hidden;
   border-radius: 15px;
   height: 250px;
-  width: 340px;
+  margin-bottom: 18px;
+  width: 100%;
 }
 .restaurant-card_new {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-top: 8px;
-  margin-left: 250px;
+  right: 10px;
+  top: 10px;
   height: 29px;
   width: 80px;
   background-color: #99E2D0;
@@ -133,7 +139,7 @@ a {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .restaurant-card_img {
-  width: 340px;
+  width: 100%;
   height: 174px;
   object-fit: cover;
 }
@@ -147,7 +153,7 @@ a {
   flex-direction: row;
   padding: 0px 25px 0px 15px;
 }
-.restaurant-card_desc h2 {
+.restaurant-card_desc h3 {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
@@ -169,7 +175,8 @@ a {
   border-radius: 15px;
   overflow: hidden;
   background-color: white;
-  animation: box-flowdown 0.5s linear;
+  animation: box-flowdown 0.5s linear forwards;
+  opacity: 0;
 }
 .menu-container_card_desc {
   transition: min-width 0.2s linear;
@@ -181,7 +188,7 @@ a {
   justify-content: center;
   flex-direction: column;
 }
-.menu-container_card_desc h4 {
+.menu-container_card_desc h3 {
   width: 100%;
   display: block;
   font-size: 18px;
@@ -208,7 +215,7 @@ a {
   justify-content: space-between;
   flex-direction: row;
 }
-.menu-container_card_price h5 {
+.menu-container_card_price h4 {
   font-size: 15px;
   margin: 0px;
   margin-right: 20px;
@@ -306,7 +313,7 @@ a {
 footer {
   bottom: 0;
   height: 186px;
-  width: 100vw;
+  width: 100%;
   color: white;
   background-color: #353535;
   display: flex;
@@ -340,7 +347,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 63px;
-  width: 100vw;
+  width: 100%;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
   position: inherit;
   z-index: 2;
@@ -364,7 +371,7 @@ header h2 {
   align-items: center;
   flex-direction: column;
   height: 335px;
-  width: 100vw;
+  width: 100%;
 }
 .hero-loc {
   display: flex;
@@ -416,13 +423,12 @@ header h2 {
 }
 
 .tutorial {
-  width: 100vw;
+  width: 80%;
   padding-top: 50px;
   flex-direction: column;
 }
 .tutorial-title {
   font-size: 24px;
-  margin: 0px 0px 35px 24px;
   font-weight: bold;
   text-align: left;
 }
@@ -442,27 +448,36 @@ header h2 {
 }
 
 .restaurant {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
   padding-top: 50px;
   background: #F6F6F6;
 }
 .restaurant_title {
   font-size: 24px;
-  margin: 0px 0px 35px 24px;
   font-weight: bold;
   text-align: left;
+}
+.restaurant-align {
+  width: 80%;
 }
 .restaurant-align_2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 18px;
   flex-direction: column;
   padding-bottom: 50px;
 }
+.restaurant-align_2 a {
+  position: relative;
+  width: 100%;
+}
 
 .menu {
-  width: 100vw;
+  width: 100%;
   margin-top: -55px;
   border-radius: 40px 40px 0px 0px;
   background: #F6F6F6;
@@ -489,7 +504,7 @@ header h2 {
   margin: 0px;
 }
 .menu_img {
-  width: 100vw !important;
+  width: 100%;
   height: 275px;
   object-fit: cover;
   position: relative;
@@ -501,6 +516,15 @@ header h2 {
   margin-left: 10px;
   width: 40px;
   border-bottom: #99E2D0 solid 3px;
+}
+.menu-container_card:nth-child(3) {
+  animation-delay: 200ms;
+}
+.menu-container_card:nth-child(4) {
+  animation-delay: 400ms;
+}
+.menu-container_card:nth-child(5) {
+  animation-delay: 600ms;
 }
 .menu a {
   margin: 20px 0px 30px 0px;
@@ -516,7 +540,7 @@ header h2 {
   }
   .hero {
     height: 280px;
-    width: 100vw !important;
+    width: 100%;
   }
   .hero-align {
     gap: 18px;
@@ -545,10 +569,11 @@ header h2 {
   .tutorial {
     flex-direction: column;
     padding: 50px 0px 50px 0px;
-    max-width: 1155px;
+    max-width: 1440px;
   }
   .tutorial-card {
-    width: 322px;
+    width: 30%;
+    max-width: 322px;
   }
   .tutorial-title {
     margin-left: 0;
@@ -563,7 +588,6 @@ header h2 {
     flex-direction: row;
     width: 100%;
     height: auto;
-    flex-wrap: wrap;
     padding-bottom: 0px;
   }
   .restaurant {
@@ -572,23 +596,22 @@ header h2 {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100vw !important;
-    padding: 50px 0px 50px 0px;
+    box-sizing: border-box;
   }
   .restaurant_title {
     width: 100%;
     text-align: left;
     margin-left: 0;
   }
-  .restaurant_align {
+  .restaurant-align {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 50px;
-    max-width: 1155px;
     padding-bottom: 0px;
+    width: 80%;
+    max-width: 1440px;
   }
   .restaurant-align_2 {
     display: flex;
@@ -596,25 +619,29 @@ header h2 {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1155px;
     padding-bottom: 0px;
+    width: 100%;
+  }
+  .restaurant-align_2 a {
+    width: 50%;
+    max-width: 490px;
+    position: relative;
   }
   .restaurant-card {
-    width: 490px;
-    margin-bottom: 0px;
+    width: 100%;
   }
   .restaurant-card_new {
-    margin-top: 16px;
-    margin-left: 394px;
+    right: 10px;
+    top: 10px;
   }
   .restaurant-card_img {
-    width: 490px;
+    width: 100%;
   }
   .restaurant-card_desc_heart {
     margin-left: 440px;
   }
   .menu {
-    width: 100vw;
+    width: 100%;
     max-width: 1055px;
   }
   .menu-title {
