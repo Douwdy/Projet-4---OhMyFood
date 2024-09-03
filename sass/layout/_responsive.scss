@@ -82,8 +82,7 @@
             padding-bottom: 0px;
             width: 100%;
             a{
-                width: 50%;
-                max-width: 490px;
+                width: 45%;
                 position: relative;
             }
         }
@@ -107,6 +106,9 @@
     .menu{
         width: 100%;
         max-width: 1055px;
+        &-container{
+            width: 60%;
+        }
         &-title{
             width: 350px;
         }
@@ -114,7 +116,7 @@
             height: 383px;
         }
         &-container_card{
-            width: 634px;
+            width: 100%;
             &_price{
                 transform: translateX(59px);
             }

@@ -31,13 +31,17 @@
     .fa-regular{
         display: unset;
     }
-    animation: bump-reverse 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: bump-reverse 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), bg-fade-reverse 0.5s ease;
+    transition: all 0.5s ease;
+    background: black;
+    background-clip: text;
     // Bouton Like animation au hover
     &:hover {
         background: $color-heart;
         background-clip: text;
+        transition: all 0.5s ease;
         color: transparent;
-        animation: bump 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        animation: bump 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), bg-fade 0.5s ease;
         cursor: pointer;
         .fa-solid{
             display: unset;
